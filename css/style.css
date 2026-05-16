@@ -229,23 +229,27 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Fade suave da foto — esquerda apenas */
+/* Fade suave da foto — esquerda, dissolução orgânica */
 .hero__photo::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(9,9,9,1) 0%, rgba(9,9,9,0) 20%);
+  background: linear-gradient(to right,
+    rgba(9,9,9,1)    0%,
+    rgba(9,9,9,0.85) 8%,
+    rgba(9,9,9,0)    42%
+  );
   z-index: 1;
   pointer-events: none;
 }
 
-/* Fade base inferior */
+/* Fade base inferior — opaco total para corte limpo com próxima seção */
 .hero__photo::after {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 160px;
-  background: linear-gradient(to top, rgba(9,9,9,0.8) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(9,9,9,1) 0%, transparent 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -393,15 +397,14 @@ ul { list-style: none; }
   object-position: top center;
   display: block;
 }
-/* Degradê neutro: cinza→transparente — integra com o fundo creme */
+/* Degradê fluido: sem midpoint, dissolução longa e orgânica */
 .sobre__photo::after {
   content: '';
   position: absolute;
   top: 0; right: 0; bottom: 0;
-  width: 45%;
+  width: 52%;
   background: linear-gradient(to left,
     rgba(244, 239, 230, 1) 0%,
-    rgba(244, 239, 230, 0.6) 40%,
     rgba(244, 239, 230, 0) 100%
   );
   pointer-events: none;
@@ -621,12 +624,12 @@ ul { list-style: none; }
   object-position: center center;
   display: block;
 }
-/* Fade suave à esquerda da foto — une com o conteúdo */
+/* Fade suave à esquerda da foto — dissolução mais longa e orgânica */
 .familia__photo::before {
   content: '';
   position: absolute;
   top: 0; left: 0; bottom: 0;
-  width: 35%;
+  width: 50%;
   background: linear-gradient(to right, rgba(244, 239, 230, 1) 0%, rgba(244, 239, 230, 0) 100%);
   pointer-events: none;
   z-index: 1;
@@ -1216,7 +1219,7 @@ ul { list-style: none; }
     width: 100%;
     top: auto; right: 0; left: 0;
     bottom: 0; height: 40%;
-    background: linear-gradient(to top, rgba(22, 61, 42, 1) 0%, rgba(22, 61, 42, 0) 100%);
+    background: linear-gradient(to top, rgba(244, 239, 230, 1) 0%, rgba(244, 239, 230, 0) 100%);
   }
   .sobre__content {
     padding: 2.5rem clamp(1.5rem, 5vw, 3rem) 4rem;
