@@ -23,6 +23,7 @@
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Montserrat', system-ui, sans-serif;
+  --font-number:  'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
 
   --max-width:  1200px;
   --radius:     2px;
@@ -946,11 +947,11 @@ ul { list-style: none; }
   50%       { opacity: 0.4; transform: scale(0.7); }
 }
 .dspower__kg-number {
-  font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  font-weight: 700;
+  font-family: var(--font-number);
+  font-size: clamp(2.4rem, 4.4vw, 3.4rem);
+  font-weight: 400;
   color: var(--gold);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   line-height: 1;
 }
 .dspower__kg-label {
@@ -969,11 +970,11 @@ ul { list-style: none; }
   -webkit-backdrop-filter: blur(8px);
 }
 .dspower__stat-number {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: var(--font-number);
+  font-size: 1.85rem;
+  font-weight: 400;
   color: var(--gold);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .dspower__stat-label {
   color: var(--text-muted-light);
@@ -1162,11 +1163,11 @@ ul { list-style: none; }
   background: rgba(26,74,56,0.3);
 }
 .numeros__value {
-  font-family: var(--font-heading);
-  font-size: clamp(2.4rem, 4.5vw, 3.5rem);
-  font-weight: 700;
+  font-family: var(--font-number);
+  font-size: clamp(2.8rem, 5.2vw, 4.2rem);
+  font-weight: 400;
   color: var(--gold);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   line-height: 1;
   display: block;
 }
