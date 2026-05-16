@@ -1,0 +1,130 @@
+<h2>Layout da seção DS Power + contador de kg</h2>
+<p class="subtitle">O contador de kg reais aparece em todos os layouts. Escolha a estrutura visual.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="A" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #090909 0%, #0f1f16 100%); padding: 1.5rem; font-family: Georgia, serif; position:relative; overflow:hidden;">
+      <div style="position:absolute; top:-40px; right:-40px; width:200px; height:200px; border-radius:50%; background:radial-gradient(circle, rgba(184,154,106,0.1) 0%, transparent 70%);"></div>
+      <div style="position:relative; z-index:1;">
+        <div style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(184,154,106,0.1); border:1px solid rgba(184,154,106,0.3); padding:0.3rem 0.8rem; border-radius:2rem; margin-bottom:0.8rem;">
+          <span style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.2em;">PROGRAMA EXCLUSIVO</span>
+        </div>
+        <div style="color:#B89A6A; font-size:2.2rem; font-weight:700; letter-spacing:-0.02em; line-height:1;">DS Power</div>
+        <div style="color:#F0EBE2; font-size:0.85rem; margin-bottom:1rem;">Acompanhamento médico de alto padrão</div>
+        <!-- CONTADOR -->
+        <div style="background:rgba(184,154,106,0.08); border:1px solid rgba(184,154,106,0.25); border-radius:8px; padding:0.8rem 1rem; margin-bottom:1rem; text-align:center;">
+          <div style="color:#B89A6A; font-size:2rem; font-weight:700; letter-spacing:-0.03em;">1.847 kg</div>
+          <div style="color:#8AADA0; font-size:0.65rem; letter-spacing:0.12em; text-transform:uppercase;">eliminados pelos nossos pacientes · ao vivo</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <div style="display:flex; align-items:center; gap:0.6rem; padding:0.5rem 0.7rem; background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.1); border-radius:6px;">
+            <div style="width:5px; height:5px; border-radius:50%; background:#B89A6A; flex-shrink:0;"></div>
+            <span style="color:#8AADA0; font-size:0.72rem;">Avaliação hormonal e metabólica completa</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.6rem; padding:0.5rem 0.7rem; background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.1); border-radius:6px;">
+            <div style="width:5px; height:5px; border-radius:50%; background:#B89A6A; flex-shrink:0;"></div>
+            <span style="color:#8AADA0; font-size:0.72rem;">Suporte vitamínico individualizado IV/IM</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.6rem; padding:0.5rem 0.7rem; background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.1); border-radius:6px;">
+            <div style="width:5px; height:5px; border-radius:50%; background:#B89A6A; flex-shrink:0;"></div>
+            <span style="color:#8AADA0; font-size:0.72rem;">Nutricionista integrada ao protocolo</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.6rem; padding:0.5rem 0.7rem; background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.1); border-radius:6px;">
+            <div style="width:5px; height:5px; border-radius:50%; background:#B89A6A; flex-shrink:0;"></div>
+            <span style="color:#8AADA0; font-size:0.72rem;">Contato direto com o médico full time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Diferenciais + Contador em destaque</h3>
+      <p>Contador centralizado como prova social principal. Lista de diferenciais abaixo. Direto e de alto impacto.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="B" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #090909; padding: 1.5rem; font-family: Georgia, serif; position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse at 20% 50%, rgba(26,74,56,0.3) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(184,154,106,0.06) 0%, transparent 50%);"></div>
+      <div style="position:relative; z-index:1;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; margin-bottom:1rem;">
+          <div style="grid-column: 1 / -1;">
+            <div style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:0.3rem;">DS Power</div>
+            <div style="color:#F0EBE2; font-size:1.4rem; line-height:1.15; font-style:italic;">"Não é uma dieta.<br/>É ciência aplicada<br/>ao seu corpo."</div>
+          </div>
+          <!-- CONTADOR HERO GRANDE -->
+          <div style="grid-column: 1 / -1; background:rgba(26,74,56,0.25); border:1px solid rgba(26,74,56,0.5); border-radius:8px; padding:1rem; text-align:center; margin-top:0.2rem;">
+            <div style="color:#B89A6A; font-size:2.5rem; font-weight:700; letter-spacing:-0.04em; line-height:1;">1.847</div>
+            <div style="color:#F0EBE2; font-size:0.75rem; margin-top:0.2rem;">kg eliminados pelos nossos pacientes</div>
+            <div style="color:#8AADA0; font-size:0.6rem; margin-top:0.2rem;">● atualizado em tempo real</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.12); border-radius:6px; padding:0.7rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.1em; margin-bottom:0.25rem;">FULL TIME</div>
+            <div style="color:#8AADA0; font-size:0.7rem;">Médico disponível durante todo o tratamento</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.12); border-radius:6px; padding:0.7rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.1em; margin-bottom:0.25rem;">INDIVIDUAL</div>
+            <div style="color:#8AADA0; font-size:0.7rem;">Protocolo criado para o seu organismo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Quote + Contador heroico + Pilares</h3>
+      <p>Frase de posicionamento, contador enorme como destaque central, 2 pilares abaixo. Mais emocional e grandioso.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="C" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(160deg, #0A0A0A 0%, #101A13 100%); padding: 1.5rem; font-family: Georgia, serif; position:relative; overflow:hidden;">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; align-items:start;">
+        <!-- LADO ESQUERDO: timeline -->
+        <div>
+          <div style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:0.5rem;">DS Power · Sua Jornada</div>
+          <div style="position:relative; padding-left:1.2rem;">
+            <div style="position:absolute; left:7px; top:8px; bottom:8px; width:1px; background:linear-gradient(to bottom, rgba(184,154,106,0.6), rgba(184,154,106,0.1));"></div>
+            <div style="display:flex; flex-direction:column; gap:0.75rem;">
+              <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+                <div style="width:14px; height:14px; border-radius:50%; background:rgba(184,154,106,0.2); border:1px solid rgba(184,154,106,0.6); flex-shrink:0; margin-top:1px;"></div>
+                <div><div style="color:#F0EBE2; font-size:0.72rem; font-weight:500;">Avaliação Completa</div><div style="color:#8AADA0; font-size:0.63rem;">Hormonal, metabólica e nutricional</div></div>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+                <div style="width:14px; height:14px; border-radius:50%; background:rgba(184,154,106,0.2); border:1px solid rgba(184,154,106,0.5); flex-shrink:0; margin-top:1px;"></div>
+                <div><div style="color:#F0EBE2; font-size:0.72rem; font-weight:500;">Protocolo Individualizado</div><div style="color:#8AADA0; font-size:0.63rem;">Criado para o seu organismo</div></div>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+                <div style="width:14px; height:14px; border-radius:50%; background:rgba(184,154,106,0.2); border:1px solid rgba(184,154,106,0.4); flex-shrink:0; margin-top:1px;"></div>
+                <div><div style="color:#F0EBE2; font-size:0.72rem; font-weight:500;">Suporte Contínuo</div><div style="color:#8AADA0; font-size:0.63rem;">Acesso direto ao médico</div></div>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+                <div style="width:14px; height:14px; border-radius:50%; background:rgba(184,154,106,0.25); border:1px solid rgba(184,154,106,0.8); flex-shrink:0; margin-top:1px;"></div>
+                <div><div style="color:#B89A6A; font-size:0.72rem; font-weight:600;">Resultado Real</div><div style="color:#8AADA0; font-size:0.63rem;">Acompanhamento até sua meta</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- LADO DIREITO: contador + stats -->
+        <div style="display:flex; flex-direction:column; gap:0.6rem;">
+          <div style="background:rgba(184,154,106,0.08); border:1px solid rgba(184,154,106,0.25); border-radius:8px; padding:1rem; text-align:center;">
+            <div style="color:#8AADA0; font-size:0.55rem; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.3rem;">● ao vivo</div>
+            <div style="color:#B89A6A; font-size:2rem; font-weight:700; letter-spacing:-0.03em; line-height:1;">1.847 kg</div>
+            <div style="color:#8AADA0; font-size:0.65rem; margin-top:0.2rem;">eliminados pelos<br/>nossos pacientes</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.1); border-radius:6px; padding:0.6rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:1.2rem; font-weight:700;">+1.200</div>
+            <div style="color:#8AADA0; font-size:0.6rem;">atendimentos</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.1); border-radius:6px; padding:0.6rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:1.2rem; font-weight:700;">16k</div>
+            <div style="color:#8AADA0; font-size:0.6rem;">seguidores</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Jornada + Contador lateral</h3>
+      <p>Timeline de 4 passos à esquerda, contador + stats à direita. Layout split que mostra processo E resultado simultaneamente.</p>
+    </div>
+  </div>
+
+</div>

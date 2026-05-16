@@ -1,0 +1,126 @@
+<h2>Seção Depoimentos — qual layout?</h2>
+<p class="subtitle">Glassmorphism em todos. A diferença é como os cards se organizam e o que cada um destaca.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="A" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #090909 0%, #0f1f16 100%); padding: 1.5rem; font-family: Georgia, serif; position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse at 80% 20%, rgba(184,154,106,0.08) 0%, transparent 50%);"></div>
+      <div style="position:relative; z-index:1;">
+        <div style="text-align:center; margin-bottom:1rem;">
+          <div style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.25em; text-transform:uppercase;">O que dizem nossas pacientes</div>
+        </div>
+        <!-- Card principal em destaque -->
+        <div style="background:rgba(255,255,255,0.04); backdrop-filter:blur(10px); border:1px solid rgba(184,154,106,0.2); border-radius:10px; padding:1rem; margin-bottom:0.6rem;">
+          <div style="color:#B89A6A; font-size:0.85rem; margin-bottom:0.4rem;">★★★★★</div>
+          <div style="color:#F0EBE2; font-size:0.85rem; font-style:italic; line-height:1.4; margin-bottom:0.7rem;">"Perdi 18kg em 4 meses com acompanhamento real. Nunca me senti sozinha no processo."</div>
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <div style="width:28px; height:28px; border-radius:50%; background:rgba(184,154,106,0.2); border:1px solid rgba(184,154,106,0.4); display:flex; align-items:center; justify-content:center; color:#B89A6A; font-size:0.7rem; font-weight:600;">M</div>
+            <div>
+              <div style="color:#F0EBE2; font-size:0.7rem; font-weight:500;">Maria S., 38 anos</div>
+              <div style="color:#B89A6A; font-size:0.6rem;">−18 kg · 4 meses</div>
+            </div>
+          </div>
+        </div>
+        <!-- Dois cards menores lado a lado -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
+          <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.12); border-radius:8px; padding:0.7rem;">
+            <div style="color:#B89A6A; font-size:0.7rem; margin-bottom:0.3rem;">★★★★★</div>
+            <div style="color:#8AADA0; font-size:0.65rem; font-style:italic; line-height:1.35; margin-bottom:0.5rem;">"Finalmente entendi meu corpo. Lipedema sob controle."</div>
+            <div style="color:#B89A6A; font-size:0.6rem;">Ana L., 44 anos</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(184,154,106,0.12); border-radius:8px; padding:0.7rem;">
+            <div style="color:#B89A6A; font-size:0.7rem; margin-bottom:0.3rem;">★★★★★</div>
+            <div style="color:#8AADA0; font-size:0.65rem; font-style:italic; line-height:1.35; margin-bottom:0.5rem;">"Menopausa controlada. Voltei a dormir bem."</div>
+            <div style="color:#B89A6A; font-size:0.6rem;">Carla M., 52 anos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Card principal + 2 mini cards</h3>
+      <p>Um depoimento em destaque grande (maior impacto) com dois secundários abaixo. Hierarquia clara, fácil de ler.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="B" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #090909; padding: 1.5rem; font-family: Georgia, serif; position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse at 20% 80%, rgba(26,74,56,0.2) 0%, transparent 60%);"></div>
+      <div style="position:relative; z-index:1;">
+        <div style="text-align:center; margin-bottom:0.8rem;">
+          <div style="color:#B89A6A; font-size:0.6rem; letter-spacing:0.25em; text-transform:uppercase;">Resultados reais</div>
+        </div>
+        <!-- Grid 3 colunas iguais -->
+        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(184,154,106,0.18); border-radius:8px; padding:0.8rem; display:flex; gap:0.8rem; align-items:flex-start;">
+            <div style="width:32px; height:32px; border-radius:50%; background:rgba(184,154,106,0.15); border:1px solid rgba(184,154,106,0.35); display:flex; align-items:center; justify-content:center; color:#B89A6A; font-size:0.75rem; font-weight:600; flex-shrink:0;">R</div>
+            <div>
+              <div style="color:#B89A6A; font-size:0.65rem; font-weight:600; margin-bottom:0.15rem;">Renata O. — −22 kg</div>
+              <div style="color:#8AADA0; font-size:0.68rem; font-style:italic; line-height:1.35;">"Resultado que não consegui em anos de academia. Médico presente em cada etapa."</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(184,154,106,0.18); border-radius:8px; padding:0.8rem; display:flex; gap:0.8rem; align-items:flex-start;">
+            <div style="width:32px; height:32px; border-radius:50%; background:rgba(184,154,106,0.15); border:1px solid rgba(184,154,106,0.35); display:flex; align-items:center; justify-content:center; color:#B89A6A; font-size:0.75rem; font-weight:600; flex-shrink:0;">F</div>
+            <div>
+              <div style="color:#B89A6A; font-size:0.65rem; font-weight:600; margin-bottom:0.15rem;">Fernanda B. — Lipedema</div>
+              <div style="color:#8AADA0; font-size:0.68rem; font-style:italic; line-height:1.35;">"Finalmente um médico que entende lipedema de verdade."</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(184,154,106,0.18); border-radius:8px; padding:0.8rem; display:flex; gap:0.8rem; align-items:flex-start;">
+            <div style="width:32px; height:32px; border-radius:50%; background:rgba(184,154,106,0.15); border:1px solid rgba(184,154,106,0.35); display:flex; align-items:center; justify-content:center; color:#B89A6A; font-size:0.75rem; font-weight:600; flex-shrink:0;">P</div>
+            <div>
+              <div style="color:#B89A6A; font-size:0.65rem; font-weight:600; margin-bottom:0.15rem;">Patrícia A. — Hormônios</div>
+              <div style="color:#8AADA0; font-size:0.68rem; font-style:italic; line-height:1.35;">"Reposição hormonal ajustada. Voltei a ser eu mesma."</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Lista com avatar + resultado</h3>
+      <p>3 depoimentos em coluna com avatar inicial, nome e resultado em destaque. Mais compacto, leitura rápida, funciona bem no mobile.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="C" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(160deg, #0A0A0A 0%, #0D1A12 100%); padding: 1.5rem; font-family: Georgia, serif; position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse at 50% 0%, rgba(184,154,106,0.07) 0%, transparent 60%);"></div>
+      <div style="position:relative; z-index:1;">
+        <!-- Número em destaque + quote grande -->
+        <div style="text-align:center; margin-bottom:1rem;">
+          <div style="color:rgba(184,154,106,0.25); font-size:4rem; font-weight:900; line-height:1; font-family:system-ui; margin-bottom:-0.5rem;">"</div>
+          <div style="color:#F0EBE2; font-size:1rem; font-style:italic; line-height:1.4; max-width:240px; margin:0 auto 0.8rem;">"Não é só emagrecer. É recuperar a saúde que eu achei que tinha perdido."</div>
+          <div style="display:flex; align-items:center; justify-content:center; gap:0.6rem;">
+            <div style="height:1px; width:30px; background:rgba(184,154,106,0.3);"></div>
+            <div style="color:#B89A6A; font-size:0.65rem; letter-spacing:0.1em;">Juliana T., 41 anos · −15 kg</div>
+            <div style="height:1px; width:30px; background:rgba(184,154,106,0.3);"></div>
+          </div>
+        </div>
+        <!-- 3 mini badges de resultado -->
+        <div style="display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap;">
+          <div style="background:rgba(26,74,56,0.25); border:1px solid rgba(26,74,56,0.5); border-radius:2rem; padding:0.3rem 0.7rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:0.75rem; font-weight:700;">−18 kg</div>
+            <div style="color:#8AADA0; font-size:0.55rem;">Maria · 4 meses</div>
+          </div>
+          <div style="background:rgba(26,74,56,0.25); border:1px solid rgba(26,74,56,0.5); border-radius:2rem; padding:0.3rem 0.7rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:0.75rem; font-weight:700;">−22 kg</div>
+            <div style="color:#8AADA0; font-size:0.55rem;">Renata · 5 meses</div>
+          </div>
+          <div style="background:rgba(26,74,56,0.25); border:1px solid rgba(26,74,56,0.5); border-radius:2rem; padding:0.3rem 0.7rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:0.75rem; font-weight:700;">Lipedema</div>
+            <div style="color:#8AADA0; font-size:0.55rem;">Fernanda · controlado</div>
+          </div>
+          <div style="background:rgba(26,74,56,0.25); border:1px solid rgba(26,74,56,0.5); border-radius:2rem; padding:0.3rem 0.7rem; text-align:center;">
+            <div style="color:#B89A6A; font-size:0.75rem; font-weight:700;">Hormônios</div>
+            <div style="color:#8AADA0; font-size:0.55rem;">Patrícia · equilibrados</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Quote editorial + badges de resultado</h3>
+      <p>Um depoimento central em tipografia grande, impactante. Badges pequenos com resultados reais embaixo. Mais emocional e premium.</p>
+    </div>
+  </div>
+
+</div>

@@ -151,6 +151,141 @@
     </div>
   </section>
 
+  <!-- DS POWER -->
+  <section class="dspower" id="dspower">
+    <div class="dspower__inner">
+      <div class="dspower__header reveal">
+        <div class="dspower__badge"><span>Programa Exclusivo</span></div>
+        <div class="dspower__title">DS Power</div>
+        <div class="dspower__subtitle">Acompanhamento médico de alto padrão</div>
+      </div>
+      <div class="dspower__grid">
+
+        <!-- Timeline -->
+        <div class="reveal reveal-d1">
+          <div class="dspower__timeline-label">Sua Jornada</div>
+          <div class="dspower__timeline">
+            <div class="dspower__step">
+              <div class="dspower__step-dot"></div>
+              <div>
+                <div class="dspower__step-title">Avaliação Completa</div>
+                <div class="dspower__step-desc">Hormonal, metabólica e nutricional</div>
+              </div>
+            </div>
+            <div class="dspower__step">
+              <div class="dspower__step-dot"></div>
+              <div>
+                <div class="dspower__step-title">Protocolo Individualizado</div>
+                <div class="dspower__step-desc">Criado exclusivamente para o seu organismo</div>
+              </div>
+            </div>
+            <div class="dspower__step">
+              <div class="dspower__step-dot"></div>
+              <div>
+                <div class="dspower__step-title">Suporte Contínuo</div>
+                <div class="dspower__step-desc">Acesso direto ao médico durante o tratamento</div>
+              </div>
+            </div>
+            <div class="dspower__step">
+              <div class="dspower__step-dot"></div>
+              <div>
+                <div class="dspower__step-title">Resultado Real</div>
+                <div class="dspower__step-desc">Acompanhamento até atingir sua meta</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contador + stats -->
+        <div class="reveal reveal-d2">
+          <div class="dspower__stats">
+            <div class="dspower__counter-box">
+              <div class="dspower__live">
+                <span class="dspower__live-dot"></span>
+                ao vivo
+              </div>
+              <div class="dspower__kg-number" id="kg-counter">—</div>
+              <div class="dspower__kg-label">kg eliminados pelos<br />nossos pacientes</div>
+            </div>
+            <div class="dspower__stat">
+              <div class="dspower__stat-number">+1.200</div>
+              <div class="dspower__stat-label">atendimentos realizados</div>
+            </div>
+            <div class="dspower__stat">
+              <div class="dspower__stat-number">16k</div>
+              <div class="dspower__stat-label">seguidores no Instagram</div>
+            </div>
+            <a href="https://wa.me/5543988432662?text=Olá%2C%20gostaria%20de%20conhecer%20o%20DS%20Power" target="_blank" rel="noopener" class="dspower__cta">
+              → Quero conhecer o DS Power
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="depoimentos__inner">
+      <div class="depoimentos__header">
+        <div class="section-label reveal">O que dizem nossas pacientes</div>
+        <h2 class="section-heading reveal reveal-d1">Resultados reais,<br />histórias reais.</h2>
+      </div>
+      <div class="depoimentos__grid">
+        <!-- Card principal -->
+        <div class="depoimentos__main reveal reveal-d1">
+          <div class="depoimentos__stars">★★★★★</div>
+          <p class="depoimentos__quote">"Perdi 18kg em 4 meses com acompanhamento real. Nunca me senti sozinha no processo — o Dr. Diego estava presente em cada etapa."</p>
+          <div class="depoimentos__author">
+            <div class="depoimentos__avatar">M</div>
+            <div>
+              <div class="depoimentos__name">Maria S., 38 anos</div>
+              <div class="depoimentos__result">−18 kg · 4 meses · DS Power</div>
+            </div>
+          </div>
+        </div>
+        <!-- Mini cards -->
+        <div class="depoimentos__mini-grid">
+          <div class="depoimentos__mini reveal reveal-d2">
+            <div class="depoimentos__stars">★★★★★</div>
+            <p class="depoimentos__mini-quote">"Finalmente entendi meu corpo. Lipedema sob controle e disposição que não tinha há anos."</p>
+            <div class="depoimentos__mini-name">Ana L., 44 anos</div>
+          </div>
+          <div class="depoimentos__mini reveal reveal-d3">
+            <div class="depoimentos__stars">★★★★★</div>
+            <p class="depoimentos__mini-quote">"Menopausa controlada, voltei a dormir bem e a ter qualidade de vida de verdade."</p>
+            <div class="depoimentos__mini-name">Carla M., 52 anos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="numeros" id="numeros">
+    <div class="numeros__inner">
+      <div class="numeros__grid">
+        <div class="numeros__item reveal">
+          <span class="numeros__value" data-count="1200" data-prefix="+">+1.200</span>
+          <span class="numeros__label">Atendimentos realizados</span>
+        </div>
+        <div class="numeros__item reveal reveal-d1">
+          <span class="numeros__value" data-count="16000" data-suffix="k">16k</span>
+          <span class="numeros__label">Seguidores no Instagram</span>
+        </div>
+        <div class="numeros__item reveal reveal-d2">
+          <span class="numeros__value">5★</span>
+          <span class="numeros__label">Avaliação média</span>
+        </div>
+        <div class="numeros__item reveal reveal-d3">
+          <span class="numeros__value" data-count="7" data-suffix="+">7+</span>
+          <span class="numeros__label">Anos de experiência</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FORMAÇÃO -->
   <section class="formacao" id="formacao">
     <div class="container">
@@ -251,17 +386,87 @@
       });
     });
 
-    // Reveal on scroll
-    const observer = new IntersectionObserver((entries) => {
+    // --- CONTADOR KG AO VIVO ---
+    function formatKg(value) {
+      return value.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 1 }) + ' kg';
+    }
+
+    function animateKgCounter(el, target) {
+      const duration = 1800;
+      const start = performance.now();
+      function step(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+        el.textContent = formatKg(Math.round(target * ease * 10) / 10);
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = formatKg(target);
+      }
+      requestAnimationFrame(step);
+    }
+
+    let kgLoaded = false;
+    async function fetchKgCounter() {
+      if (kgLoaded) return;
+      const el = document.getElementById('kg-counter');
+      if (!el) return;
+      try {
+        const res = await fetch('https://app.clinicdspro.com.br/api/public/stats', { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const { totalLostKg } = await res.json();
+        kgLoaded = true;
+        animateKgCounter(el, totalLostKg);
+      } catch {
+        // fallback estático enquanto API não está disponível
+        el.textContent = '1.847 kg';
+      }
+    }
+
+    // Busca quando o contador entrar no viewport
+    const kgObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        fetchKgCounter();
+        kgObserver.disconnect();
+      }
+    }, { threshold: 0.3 });
+    const kgEl = document.getElementById('kg-counter');
+    if (kgEl) kgObserver.observe(kgEl);
+
+    // --- CONTADORES NUMÉRICOS ANIMADOS ---
+    function animateCounter(el, target) {
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const duration = 1600;
+      const start = performance.now();
+      function step(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(target * ease);
+        if (target >= 1000) {
+          el.textContent = prefix + (current >= 1000 ? Math.floor(current / 1000) + 'k' : current) + (suffix === 'k' ? '' : suffix);
+        } else {
+          el.textContent = prefix + current + suffix;
+        }
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = prefix + (target >= 1000 ? Math.floor(target / 1000) + 'k' : target) + (suffix === 'k' ? '' : suffix);
+      }
+      requestAnimationFrame(step);
+    }
+
+    // --- REVEAL ON SCROLL ---
+    const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+          // Animar contadores ao revelar
+          const counter = entry.target.querySelector('[data-count]') ||
+                          (entry.target.dataset.count ? entry.target : null);
+          if (counter) animateCounter(counter, parseInt(counter.dataset.count));
+          revealObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   </script>
 </body>
 </html>
