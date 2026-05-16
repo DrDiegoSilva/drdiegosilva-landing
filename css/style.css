@@ -289,12 +289,12 @@ ul { list-style: none; }
 }
 
 .hero__sub {
-  font-size: 0.93rem;
+  font-size: 1.06rem;
   font-weight: 300;
   color: var(--text-muted-light);
   line-height: 1.95;
   margin-bottom: 2.75rem;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .hero__btn { font-size: 0.85rem; padding: 1rem 2rem; }
@@ -362,7 +362,7 @@ ul { list-style: none; }
   opacity: 0.65;
 }
 .dores__item p {
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 300;
   color: var(--text-muted-dark);
   line-height: 1.7;
@@ -424,7 +424,7 @@ ul { list-style: none; }
 .sobre__destaque {
   font-family: var(--font-heading);
   font-style: italic;
-  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
   color: var(--bg-green-mid);
   border-left: 2px solid var(--gold);
   padding-left: 1.5rem;
@@ -432,7 +432,7 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 .sobre__text {
-  font-size: 0.93rem;
+  font-size: 1.05rem;
   font-weight: 300;
   color: var(--text-muted-dark);
   line-height: 1.95;
@@ -508,7 +508,7 @@ ul { list-style: none; }
   color: var(--text-dark);
 }
 .servicos__card p {
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 400;
   color: var(--text-dark);
   line-height: 1.78;
@@ -552,7 +552,7 @@ ul { list-style: none; }
 }
 .formacao__count-label {
   display: block;
-  font-size: 0.83rem;
+  font-size: 0.96rem;
   font-weight: 300;
   color: var(--text-muted-light);
   margin-top: 0.9rem;
@@ -565,7 +565,7 @@ ul { list-style: none; }
   gap: 1.1rem;
 }
 .formacao__items li {
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   font-weight: 300;
   color: var(--text-muted-light);
   padding-left: 1.4rem;
@@ -643,7 +643,7 @@ ul { list-style: none; }
   margin-bottom: 1.5rem;
 }
 .familia__text {
-  font-size: 0.97rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: var(--text-muted-dark);
   line-height: 1.95;
@@ -693,7 +693,7 @@ ul { list-style: none; }
 }
 .cta-final__sub {
   color: var(--text-muted-light);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 300;
   margin-bottom: 2.75rem;
 }
@@ -713,7 +713,8 @@ ul { list-style: none; }
    FOOTER — emblema circular + layout vertical premium
    ============================================================ */
 .footer {
-  background: #040404;
+  background: #0d0d0d;
+  background-image: radial-gradient(ellipse 90% 50% at 50% 100%, rgba(26,56,38,0.35) 0%, transparent 70%);
   padding: 0 0 3rem;
 }
 .footer__inner {
@@ -782,8 +783,8 @@ ul { list-style: none; }
 .footer__social:hover { color: var(--gold); }
 
 .footer__copy {
-  font-size: 0.65rem;           /* era 0.6rem — levemente maior */
-  color: rgba(240, 235, 226, 0.4); /* creme suave — decorativo mas legível */
+  font-size: 0.65rem;
+  color: rgba(240, 235, 226, 0.55); /* creme — mais legível no fundo escuro */
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -904,8 +905,8 @@ ul { list-style: none; }
 }
 .dspower__step-desc {
   color: var(--text-muted-light);
-  font-size: 0.78rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 /* Contador + stats */
@@ -1108,7 +1109,7 @@ ul { list-style: none; }
 }
 .depoimentos__mini-quote {
   color: var(--text-muted-light);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-style: italic;
   line-height: 1.5;
   margin-bottom: 0.65rem;
@@ -1144,7 +1145,7 @@ ul { list-style: none; }
 }
 .numeros__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: rgba(184,154,106,0.1);
   border: 1px solid rgba(184,154,106,0.1);
