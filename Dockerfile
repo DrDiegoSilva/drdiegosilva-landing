@@ -6,7 +6,11 @@ RUN rm /etc/nginx/conf.d/default.conf
 # Config nginx para SPA/static com gzip e cache
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copia os arquivos do site (v2 — redesign premium)
+# Cache buster — invalida layers do Docker a cada rebuild
+ARG CACHEBUST=1
+RUN echo "build $CACHEBUST"
+
+# Copia os arquivos do site
 COPY index.html /usr/share/nginx/html/
 COPY css/ /usr/share/nginx/html/css/
 COPY images/ /usr/share/nginx/html/images/
