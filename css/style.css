@@ -156,8 +156,6 @@ ul { list-style: none; }
   height: 44px;
   width: auto;
   opacity: 1;
-  /* Logo sobre fundo sempre escuro — forçar versão clara */
-  filter: brightness(0) invert(1);
 }
 .nav__cta { font-size: 0.75rem; padding: 0.55rem 1.3rem; }
 
