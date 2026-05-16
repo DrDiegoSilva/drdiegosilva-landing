@@ -7,7 +7,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Cache buster — invalida layers do Docker a cada rebuild
-ARG CACHEBUST=1
+ARG CACHEBUST=2
 RUN echo "build $CACHEBUST"
 
 # Copia os arquivos do site
