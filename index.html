@@ -205,7 +205,7 @@
                 ao vivo
               </div>
               <div class="dspower__kg-number" id="kg-counter">—</div>
-              <div class="dspower__kg-label">kg eliminados pelos<br />nossos pacientes</div>
+              <div class="dspower__kg-label">toneladas eliminadas pelos<br />nossos pacientes</div>
             </div>
             <div class="dspower__stat">
               <div class="dspower__stat-number">+1.200</div>
@@ -279,7 +279,7 @@
           <span class="numeros__label">Avaliação média</span>
         </div>
         <div class="numeros__item reveal reveal-d3">
-          <span class="numeros__value" data-count="7" data-suffix="+">7+</span>
+          <span class="numeros__value" data-count="3" data-suffix="+">3+</span>
           <span class="numeros__label">Anos de experiência</span>
         </div>
       </div>
@@ -386,20 +386,21 @@
       });
     });
 
-    // --- CONTADOR KG AO VIVO ---
-    function formatKg(value) {
-      return value.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 1 }) + ' kg';
+    // --- CONTADOR TONELADAS AO VIVO ---
+    function formatTon(kg) {
+      const t = kg / 1000;
+      return t.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' T';
     }
 
-    function animateKgCounter(el, target) {
+    function animateKgCounter(el, targetKg) {
       const duration = 1800;
       const start = performance.now();
       function step(now) {
         const progress = Math.min((now - start) / duration, 1);
         const ease = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-        el.textContent = formatKg(Math.round(target * ease * 10) / 10);
+        el.textContent = formatTon(Math.round(targetKg * ease));
         if (progress < 1) requestAnimationFrame(step);
-        else el.textContent = formatKg(target);
+        else el.textContent = formatTon(targetKg);
       }
       requestAnimationFrame(step);
     }
@@ -417,7 +418,7 @@
         animateKgCounter(el, totalLostKg);
       } catch {
         // fallback estático enquanto API não está disponível
-        el.textContent = '1.847 kg';
+        el.textContent = '1,8 T';
       }
     }
 
