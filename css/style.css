@@ -156,6 +156,8 @@ ul { list-style: none; }
   height: 44px;
   width: auto;
   opacity: 1;
+  /* Logo sobre fundo sempre escuro — forçar versão clara */
+  filter: brightness(0) invert(1);
 }
 .nav__cta { font-size: 0.75rem; padding: 0.55rem 1.3rem; }
 
@@ -755,7 +757,7 @@ ul { list-style: none; }
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 400;
-  color: rgba(240, 235, 226, 0.75);
+  color: rgba(240, 235, 226, 0.92);
   letter-spacing: 0.04em;
   margin-bottom: 0.4rem;
 }
@@ -764,7 +766,7 @@ ul { list-style: none; }
   font-size: 0.62rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(138, 173, 160, 0.80);
+  color: rgba(184, 154, 106, 0.85); /* dourado — legível e on-brand */
   margin-bottom: 1.75rem;
 }
 
@@ -775,15 +777,15 @@ ul { list-style: none; }
   font-size: 0.78rem;
   font-weight: 300;
   letter-spacing: 0.04em;
-  color: rgba(138, 173, 160, 0.6);
+  color: rgba(240, 235, 226, 0.6); /* creme — contraste ok em fundo preto */
   transition: color 0.25s;
   margin-bottom: 3rem;
 }
 .footer__social:hover { color: var(--gold); }
 
 .footer__copy {
-  font-size: 0.6rem;
-  color: rgba(138, 173, 160, 0.75);
+  font-size: 0.65rem;           /* era 0.6rem — levemente maior */
+  color: rgba(240, 235, 226, 0.4); /* creme suave — decorativo mas legível */
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
