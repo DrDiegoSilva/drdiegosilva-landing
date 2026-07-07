@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Diego Silva — Emagrecimento e Saúde Hormonal | Londrina</title>
-  <meta name="description" content="Médico com atuação em emagrecimento, saúde hormonal e qualidade de vida. Atendimento presencial em Londrina e online. CRM PR 54310." />
+  <title>Dr. Diego Silva — Emagrecimento, Reposição Hormonal e Lipedema em Londrina</title>
+  <meta name="description" content="Médico em Londrina com atuação em emagrecimento, reposição hormonal feminina e masculina e acompanhamento do lipedema. Presencial em Londrina e consulta online para todo o Brasil. CRM-PR 54310." />
+  <link rel="canonical" href="https://drdiegosilva.com.br/" />
+
+  <!-- Open Graph + Twitter Card — controla o preview do link no WhatsApp/Instagram
+       (funil real: Instagram → WhatsApp → consulta; sem isso o link compartilhado sai "pelado").
+       TODO (opcional): criar uma imagem OG dedicada 1200×630 (foto + nome + "Londrina");
+       por enquanto usamos a foto do hero, que funciona bem como thumbnail. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dr. Diego Silva" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://drdiegosilva.com.br/" />
+  <meta property="og:title" content="Dr. Diego Silva — Emagrecimento, Reposição Hormonal e Lipedema em Londrina" />
+  <meta property="og:description" content="Médico em Londrina com atuação em emagrecimento, reposição hormonal e acompanhamento do lipedema. Presencial em Londrina e consulta online para todo o Brasil. CRM-PR 54310." />
+  <meta property="og:image" content="https://drdiegosilva.com.br/images/FCA7E1F6-A209-4741-8708-2EE1E53F006F_1_105_c.jpeg" />
+  <meta property="og:image:width" content="724" />
+  <meta property="og:image:height" content="1086" />
+  <meta property="og:image:alt" content="Retrato do Dr. Diego Silva, médico em Londrina" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr. Diego Silva — Emagrecimento, Reposição Hormonal e Lipedema em Londrina" />
+  <meta name="twitter:description" content="Médico em Londrina com atuação em emagrecimento, reposição hormonal e acompanhamento do lipedema. Presencial em Londrina e consulta online para todo o Brasil. CRM-PR 54310." />
+  <meta name="twitter:image" content="https://drdiegosilva.com.br/images/FCA7E1F6-A209-4741-8708-2EE1E53F006F_1_105_c.jpeg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -18,6 +39,106 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#163D2A" />
+
+  <!-- Dados estruturados (JSON-LD): diz para Google e IAs (ChatGPT/Perplexity/Gemini)
+       que "Instituto Diego Silva" e "Dr. Diego Silva" são a MESMA entidade médica
+       em Londrina, e quais serviços ela oferece. O `sameAs` liga site ↔ Instagram ↔
+       Google ↔ Doctoralia — é o que resolve a fragmentação da identidade.
+       TODO: adicionar no `sameAs` a URL do Perfil do Google e do Doctoralia quando prontos. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "@id": "https://drdiegosilva.com.br/#dr-diego-silva",
+    "name": "Dr. Diego Silva",
+    "alternateName": ["Instituto Diego Silva", "Clínica Dr. Diego Silva", "Edson Diego Silva"],
+    "url": "https://drdiegosilva.com.br/",
+    "image": "https://drdiegosilva.com.br/images/FCA7E1F6-A209-4741-8708-2EE1E53F006F_1_105_c.jpeg",
+    "logo": "https://drdiegosilva.com.br/images/logo-white.png",
+    "description": "Médico (CRM-PR 54310) com atuação em emagrecimento, reposição hormonal feminina e masculina e manejo do lipedema. Atendimento presencial em Londrina e online para todo o Brasil.",
+    "telephone": "+55-43-98843-2662",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "CRM",
+      "value": "CRM-PR 54310"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Londrina",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.3438196,
+      "longitude": -51.1641238
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Londrina" },
+      { "@type": "Country", "name": "Brasil" }
+    ],
+    "availableService": [
+      { "@type": "MedicalTherapy", "name": "Tratamento clínico de emagrecimento" },
+      { "@type": "MedicalTherapy", "name": "Reposição hormonal feminina" },
+      { "@type": "MedicalTherapy", "name": "Reposição hormonal masculina" },
+      { "@type": "MedicalTherapy", "name": "Acompanhamento clínico do lipedema" }
+    ],
+    "knowsAbout": [
+      "Emagrecimento clínico",
+      "Reposição hormonal feminina",
+      "Reposição hormonal masculina",
+      "Menopausa e perimenopausa",
+      "Andropausa",
+      "Lipedema",
+      "Implantes hormonais subcutâneos",
+      "Telemedicina"
+    ],
+    "knowsLanguage": "pt-BR",
+    "sameAs": [
+      "https://www.instagram.com/drdiegosilvaoficial/",
+      "https://www.google.com/maps?cid=8358177079979073458"
+    ]
+  }
+  </script>
+  <!-- NOTA sobre o JSON-LD acima:
+       · `geo` usa as coordenadas do Perfil de Empresa do Google (pin do
+         "Clínica Dr. Diego Silva", CID 8358177079979073458 — mesmo perfil do `sameAs`).
+         TODO: quando o Diego confirmar o endereço exato do consultório, acrescentar
+         `streetAddress`/`postalCode` no address (as coordenadas já são as reais do perfil).
+       · `sameAs` liga o site ao Instagram e ao Perfil do Google (Clínica Dr. Diego Silva),
+         resolvendo a fragmentação de identidade. TODO: acrescentar a URL do Doctoralia
+         quando o perfil estiver preenchido.
+       · SEM `medicalSpecialty` de propósito: o Dr. Diego não tem RQE, e declarar
+         especialidade em dado estruturado poderia ferir a Resolução CFM sobre
+         publicidade médica. `knowsAbout` descreve áreas de atuação sem título.
+       · SEM `aggregateRating`: nunca fabricar avaliação sem fonte real. -->
+
+  <!-- WebSite + página principal: reforça para buscadores/IAs que o site inteiro
+       é a presença oficial da entidade #dr-diego-silva -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://drdiegosilva.com.br/#website",
+        "url": "https://drdiegosilva.com.br/",
+        "name": "Dr. Diego Silva",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://drdiegosilva.com.br/#dr-diego-silva" }
+      },
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://drdiegosilva.com.br/#webpage",
+        "url": "https://drdiegosilva.com.br/",
+        "name": "Dr. Diego Silva — Emagrecimento, Reposição Hormonal e Lipedema em Londrina",
+        "isPartOf": { "@id": "https://drdiegosilva.com.br/#website" },
+        "about": { "@id": "https://drdiegosilva.com.br/#dr-diego-silva" },
+        "inLanguage": "pt-BR"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -25,7 +146,7 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#" class="nav__logo">
-        <img src="images/logo-white.png" alt="Dr. Diego Silva" class="nav__logo-img" />
+        <img src="images/logo-white.png" alt="Dr. Diego Silva — logotipo" class="nav__logo-img" width="619" height="174" />
       </a>
       <a href="https://wa.me/5543988432662?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener" class="btn btn--outline-gold nav__cta">
         Agendar consulta
@@ -42,7 +163,7 @@
           Seu objetivo<br />é o meu<br />objetivo.
         </h1>
         <p class="hero__sub">
-          Médico com atuação em emagrecimento, saúde hormonal e qualidade de vida — presencial em Londrina e online para todo o Brasil.
+          Médico com atuação em emagrecimento, saúde hormonal, lipedema e qualidade de vida — presencial em Londrina e online para todo o Brasil.
         </p>
         <a href="https://wa.me/5543988432662?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener" class="btn btn--gold hero__btn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.847L.057 23.888a.5.5 0 0 0 .616.601l6.109-1.499A11.948 11.948 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 0 1-5.074-1.388l-.361-.214-3.742.918.949-3.671-.235-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
@@ -50,7 +171,7 @@
         </a>
       </div>
       <div class="hero__photo">
-        <img src="images/FCA7E1F6-A209-4741-8708-2EE1E53F006F_1_105_c.jpeg" alt="Dr. Diego Silva" class="hero__img" />
+        <img src="images/FCA7E1F6-A209-4741-8708-2EE1E53F006F_1_105_c.jpeg" alt="Retrato do Dr. Diego Silva, médico em Londrina — CRM-PR 54310" class="hero__img" width="724" height="1086" loading="eager" fetchpriority="high" />
       </div>
     </div>
     <div class="hero__scroll"><span></span></div>
@@ -99,7 +220,7 @@
   <section class="sobre" id="sobre">
     <div class="sobre__inner">
       <div class="sobre__photo reveal">
-        <img src="images/979D6551-751C-4231-AE29-237B14C1140B_1_105_c.jpeg" alt="Dr. Diego Silva" />
+        <img src="images/979D6551-751C-4231-AE29-237B14C1140B_1_105_c.jpeg" alt="Dr. Diego Silva, médico com atuação em emagrecimento e saúde hormonal em Londrina" width="724" height="1086" loading="lazy" decoding="async" />
       </div>
       <div class="sobre__content">
         <div class="section-label reveal">Quem sou eu</div>
@@ -144,7 +265,7 @@
         <div class="servicos__card reveal reveal-d4">
           <div class="servicos__num">04</div>
           <h3>Lipedema</h3>
-          <p>Diagnóstico e acompanhamento clínico do lipedema com abordagem integrada e humanizada.</p>
+          <p>Diagnóstico e acompanhamento clínico do lipedema, em Londrina e online, com abordagem integrada e humanizada.</p>
         </div>
         <div class="servicos__card reveal reveal-d5">
           <div class="servicos__num">05</div>
@@ -325,10 +446,119 @@
         </a>
       </div>
       <div class="familia__photo reveal">
-        <img src="images/familia.jpeg" alt="Dr. Diego Silva e família" />
+        <img src="images/familia.jpeg" alt="Dr. Diego Silva com a esposa e o filho" width="1086" height="724" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
+
+  <!-- FAQ — perguntas reais do público; alimenta o rich result FAQPage e as
+       respostas de IA (ChatGPT/Perplexity/Gemini). O JSON-LD logo abaixo da
+       seção espelha EXATAMENTE este texto visível (regra do Google):
+       se editar uma pergunta/resposta aqui, editar TAMBÉM no script. -->
+  <section class="faq" id="perguntas">
+    <div class="container">
+      <div class="section-label reveal">Perguntas frequentes</div>
+      <h2 class="section-heading reveal reveal-d1">O que você precisa saber<br />antes da consulta</h2>
+      <div class="faq__list">
+        <details class="faq__item reveal reveal-d1">
+          <summary class="faq__question">Como funciona o emagrecimento com acompanhamento médico?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer">
+            <p>Tudo começa com uma avaliação completa — histórico, exames e análise metabólica e hormonal — para entender por que o seu corpo está resistindo a emagrecer. A partir daí, o Dr. Diego monta um plano individualizado, que pode incluir mudanças de estilo de vida, tratamento de desequilíbrios hormonais e, quando há indicação, medicações. O acompanhamento é contínuo, com reavaliações ao longo de todo o tratamento.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal reveal-d2">
+          <summary class="faq__question">O que é lipedema e tem tratamento?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer">
+            <p>O lipedema é uma condição crônica em que há acúmulo desproporcional de gordura, principalmente nas pernas e nos braços, muitas vezes com dor, sensibilidade e facilidade para formar hematomas. Não é falta de dieta nem de exercício — é uma doença reconhecida, que merece diagnóstico e acompanhamento médico. Embora não exista cura definitiva, o tratamento clínico ajuda a controlar os sintomas, frear a progressão e melhorar a qualidade de vida. O Dr. Diego Silva realiza o diagnóstico e o acompanhamento do lipedema em Londrina e também por consulta online.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal reveal-d3">
+          <summary class="faq__question">Quando procurar reposição hormonal na menopausa?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer">
+            <p>Se sintomas como ondas de calor, insônia, alterações de humor, queda de libido ou ganho de peso estão atrapalhando a sua rotina, vale conversar com um médico — inclusive na perimenopausa, a fase de transição que antecede a menopausa. A reposição hormonal não é indicada para todas as mulheres: a decisão nasce de uma avaliação individual, com exames e análise do histórico, pesando benefícios e riscos caso a caso.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal reveal-d4">
+          <summary class="faq__question">Homens também fazem reposição hormonal?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer">
+            <p>Sim. A queda da testosterona — às vezes chamada de andropausa — pode causar cansaço, perda de massa muscular, queda de libido e alterações de humor. Quando a deficiência é confirmada por exames e avaliação clínica, a reposição hormonal masculina pode ser indicada, incluindo a opção de implantes subcutâneos. O tratamento é sempre individualizado e acompanhado de perto.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal reveal-d5">
+          <summary class="faq__question">Como funciona a consulta online?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer">
+            <p>A consulta online é feita por videochamada, com a mesma estrutura da presencial: escuta do seu histórico, análise de exames e definição do plano de tratamento. Receitas e pedidos de exame são emitidos digitalmente e valem em todo o Brasil. Quando o caso pede avaliação física presencial, o Dr. Diego orienta o melhor caminho.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal reveal-d6">
+          <summary class="faq__question">Onde o Dr. Diego Silva atende?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__answer">
+            <p>O atendimento presencial é em Londrina, no Paraná. Quem está em outra cidade ou estado pode optar pela consulta online, disponível para todo o Brasil. O agendamento é feito pelo WhatsApp: (43) 98843-2662.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQPage JSON-LD — espelho fiel do texto visível da seção acima -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://drdiegosilva.com.br/#faq",
+    "inLanguage": "pt-BR",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como funciona o emagrecimento com acompanhamento médico?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tudo começa com uma avaliação completa — histórico, exames e análise metabólica e hormonal — para entender por que o seu corpo está resistindo a emagrecer. A partir daí, o Dr. Diego monta um plano individualizado, que pode incluir mudanças de estilo de vida, tratamento de desequilíbrios hormonais e, quando há indicação, medicações. O acompanhamento é contínuo, com reavaliações ao longo de todo o tratamento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que é lipedema e tem tratamento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O lipedema é uma condição crônica em que há acúmulo desproporcional de gordura, principalmente nas pernas e nos braços, muitas vezes com dor, sensibilidade e facilidade para formar hematomas. Não é falta de dieta nem de exercício — é uma doença reconhecida, que merece diagnóstico e acompanhamento médico. Embora não exista cura definitiva, o tratamento clínico ajuda a controlar os sintomas, frear a progressão e melhorar a qualidade de vida. O Dr. Diego Silva realiza o diagnóstico e o acompanhamento do lipedema em Londrina e também por consulta online."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quando procurar reposição hormonal na menopausa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Se sintomas como ondas de calor, insônia, alterações de humor, queda de libido ou ganho de peso estão atrapalhando a sua rotina, vale conversar com um médico — inclusive na perimenopausa, a fase de transição que antecede a menopausa. A reposição hormonal não é indicada para todas as mulheres: a decisão nasce de uma avaliação individual, com exames e análise do histórico, pesando benefícios e riscos caso a caso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Homens também fazem reposição hormonal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. A queda da testosterona — às vezes chamada de andropausa — pode causar cansaço, perda de massa muscular, queda de libido e alterações de humor. Quando a deficiência é confirmada por exames e avaliação clínica, a reposição hormonal masculina pode ser indicada, incluindo a opção de implantes subcutâneos. O tratamento é sempre individualizado e acompanhado de perto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a consulta online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A consulta online é feita por videochamada, com a mesma estrutura da presencial: escuta do seu histórico, análise de exames e definição do plano de tratamento. Receitas e pedidos de exame são emitidos digitalmente e valem em todo o Brasil. Quando o caso pede avaliação física presencial, o Dr. Diego orienta o melhor caminho."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Onde o Dr. Diego Silva atende?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O atendimento presencial é em Londrina, no Paraná. Quem está em outra cidade ou estado pode optar pela consulta online, disponível para todo o Brasil. O agendamento é feito pelo WhatsApp: (43) 98843-2662."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- CTA FINAL -->
   <section class="cta-final">
@@ -358,7 +588,7 @@
       <div class="footer__divider"></div>
 
       <div class="footer__center">
-        <img src="images/Ativo 10.png" alt="Dr. Diego Silva" class="footer__emblem" />
+        <img src="images/Ativo 10.png" alt="Emblema da marca Dr. Diego Silva" class="footer__emblem" width="415" height="418" loading="lazy" decoding="async" />
         <p class="footer__name">Dr. Diego Silva</p>
         <p class="footer__crm">Médico · CRM PR 54310</p>
         <a href="https://www.instagram.com/drdiegosilvaoficial/" target="_blank" rel="noopener" class="footer__social">

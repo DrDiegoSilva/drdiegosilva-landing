@@ -11,6 +11,10 @@ COPY index.html /usr/share/nginx/html/
 COPY css/ /usr/share/nginx/html/css/
 COPY images/ /usr/share/nginx/html/images/
 
+# SEO: robots.txt e sitemap.xml (servidos a partir da raiz)
+COPY robots.txt /usr/share/nginx/html/
+COPY sitemap.xml /usr/share/nginx/html/
+
 # Favicons e webmanifest (servidos a partir da raiz)
 COPY favicon.ico /usr/share/nginx/html/
 COPY favicon-16x16.png /usr/share/nginx/html/
